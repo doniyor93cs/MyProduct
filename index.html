@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/col.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,7 +19,9 @@
                 <a class="logo" href="#">
                     <img class="logo__img" src="images/logotip.svg" alt="logotip">
                 </a>
-                <nav class="navbar grid end">
+                <button class="burger"><i class="fa-solid fa-bars"></i></button>
+                <input class="input__checkbox" type="checkbox">
+                <nav class="navbar grid end align-center">
                     <ul class="nav__list grid">
                         <li class="nav__item"><a class="nav__link active" href="#">Product</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Customers</a></li>
@@ -159,6 +165,7 @@
                 </div>
             </div>
        </section>
+       <!-- process -->
        <section class="process">
           <div class="container">
             <h2 class="title process__title">Quick & Easy Process</h2>
@@ -166,37 +173,254 @@
                 prototyping, marketing strategy, landing page, Ux/UI?</p>
             <ul class="process__list grid between">
                 <li class="process__item col-12 col-sm-6 col-md-6 col-lg-6">
-                    <div class="grid align-center">
+                    <div class="process__block grid">
                         <img class="process__img" src="images/teamPictureOne.svg" alt="picture">
-                        <img src="images/text-bg.png" alt="text-bg">
-                        <p class="process__desc">I can take care of your pitch</p>
+                        <div class="text__block">
+                            <img class="text__bg" src="images/text-bg.png" alt="text-bg">
+                            <p class="process__desc">I can take care of your pitch</p>
+                        </div>
                     </div>
                 </li>
                 <li class="process__item col-12 col-lg-6 col-md-6 col-sm-6">
-                   <div class="grid align-center reverse">
+                   <div class="process__block grid reverse">
                         <img class="process__img" src="images/teamPictureFour.svg" alt="picture">
-                        <img src="images/text-bg.png" alt="text-bg">
-                        <p class="process__desc">I can prototype your app</p>
+                        <div class="text__block rwd__text-block">
+                            <img class="text__bg" src="images/text-bg.png" alt="text-bg">
+                            <p class="process__desc">I can prototype your app</p>
+                        </div>
                    </div>
                 </li>
                 <li class="process__item col-12 col-lg-6 col-md-6 col-sm-6">
-                   <div class="grid align-center reverse">
+                   <div class="process__block grid reverse">
                         <img class="process__img" src="images/teamPictureTwo.svg" alt="picture">
-                        <img src="images/text-bg.png" alt="text-bg">
-                        <p class="process__desc">I can design you website</p>
+                        <div class="text__block rwd__text-block">
+                            <img class="text__bg" src="images/text-bg.png" alt="text-bg">
+                            <p class="process__desc">I can design you website</p>
+                        </div>
                    </div>
                 </li>
                 <li class="process__item col-12 col-lg-6 col-md-6 col-sm-6">
-                   <div class="grid align-center">
+                   <div class="process__block grid">
                         <img class="process__img" src="images/teamPictureThree.svg" alt="picture">
-                        <img src="images/text-bg.png" alt="text-bg">
-                        <p class="process__desc">I can help marketing strategy</p>
+                        <div class="text__block">
+                            <img class="text__bg" src="images/text-bg.png" alt="text-bg">
+                            <p class="process__desc">I can help marketing strategy</p>
+                        </div>
                    </div>
                 </li>
             </ul>
             <a class="process__btn button" href="#">Contact our expert</a>
         </div>
        </section>
+       <!-- strategies -->
+       <section class="strategies">
+           <div class="container">
+               <div class="title">Contents Strategies</div>
+               <p class="strategies__desc text">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+               <ul class="strategies__list grid between">
+                   <li class="strategies__item">
+                       <img src="images/Strategies-one.jpg" alt="image">
+                       <p>By <b>Wahid Ari</b> | 12 april 2022</p>
+                       <h4 class="strategies__caption">Increasing Prosperity With Positive Thinking</h4>
+                   </li>
+                   <li class="strategies__item">
+                       <img src="images/Strategies-two.jpg" alt="image">
+                       <p>By <b>Wahid Ari</b> | 12 april 2022</p>
+                        <h4 class="strategies__caption">Motivation Is The First Step To Success</h4>
+                   </li>
+                   <li class="strategies__item">
+                       <img src="images/Strategies-tree.jpg" alt="image">
+                       <p>By <b>Wahid Ari</b> | 12 april 2022</p>
+                        <h4 class="strategies__caption">Success Steps For Your Personal Or Business</h4>
+                   </li>
+               </ul>
+               <div class="circles">
+                   <span class="circle"></span>
+                   <span class="circle"></span>
+                   <span class="circle"></span>
+               </div>
+           </div>
+       </section>
+       <!-- price -->
+       <section class="price">
+           <div class="container">
+               <h2 class="title">Price Table</h2>
+               <h4 class="price__subtitle text">We offer competitive price</h4>
+               <ul class="price__list grid between">
+                   <li class="price__item">
+                        <h3 class="price__subject">Free</h3>
+                        <p class="price__desc">Brief price description</p>
+                        <div class="price__month grid align-center center">
+                            <span>0</span>
+                            <span><b>$</b><br>Per / month</span>
+                        </div>
+                        <ul>
+                           <li>Only 2 Operators</li>
+                           <li>Notifications</li>
+                           <li>Landing Pages</li>
+                       </ul>
+                       <a class="price__btn button" href="#">Order Now</a>
+                   </li>
+                   <li class="price__item">
+                        <h3 class="price__subject">Standard</h3>
+                        <p class="price__desc">Brief price description</p>
+                        <div class="price__month grid align-center center">
+                            <span>5</span>
+                            <span><b>$</b><br>Per / month</span>
+                        </div>
+                        <ul>
+                           <li>5+ Operators</li>
+                           <li>Notifications</li>
+                           <li>Landing Pages</li>
+                        </ul>
+                        <a class="price__btn button" href="#">Order Now</a>
+                   </li>
+                   <li class="price__item">
+                        <h3 class="price__subject">Premium</h3>
+                        <p class="price__desc">Brief price description</p>
+                        <div class="price__month grid align-center center">
+                            <span>10</span>
+                            <span><b>$</b><br>Per / month</span>
+                        </div>
+                        <ul>
+                           <li>10+ Operators</li>
+                           <li>Notifications</li>
+                           <li>Landing Pages</li>
+                       </ul>
+                       <a class="price__btn button" href="#">Order Now</a>
+                   </li>
+               </ul>
+           </div>
+       </section>
+       <!-- client -->
+       <section class="client">
+            <div class="container">
+                    <h2 class="client__title title">What Clients Say</h2>
+                    <h4 class="client__desc">Problems trying to resolve the conflict between <br>
+                        the two major realms of Classical physics: Newtonian mechanics</h4>
+                    <ul class="client__list grid between">
+                        <li class="client-item">
+                            <div class="client-item__rate">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <p class="client-item__rewiev">Product helps you see how many
+                                more days you need to work to
+                                reach your financial goal.</p>
+                            <div class="client-item__info grid align-bottom">
+                                <img src="images/client-img-1.svg" alt="client-img">
+                                <div>
+                                    <span class="client-item__name">Wahid Ari</span><br>
+                                    <span class="client-item__position">Designer</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="client-item">
+                            <div class="client-item__rate">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <p class="client-item__rewiev">Product helps you see how many
+                                more days you need to work to
+                                reach your financial goal.</p>
+                            <div class="client-item__info grid align-bottom">
+                                <img src="images/client-img-2.svg" alt="client-img">
+                                <div>
+                                    <span class="client-item__name">Wahid Ari</span><br>
+                                    <span class="client-item__position">Designer</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="client-item">
+                            <div class="client-item__rate">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+                            <p class="client-item__rewiev">Product helps you see how many
+                                more days you need to work to
+                                reach your financial goal.</p>
+                            <div class="client-item__info grid align-bottom">
+                                <img src="images/client-img-3.svg" alt="client-img">
+                                <div>
+                                    <span class="client-item__name">Wahid Ari</span><br>
+                                    <span class="client-item__position">Designer</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+       </section>
+       <!-- Join -->
+       <section class="join">
+           <div class="container">
+               <div class="join__inner grid between">
+                 <div class="join__content">
+                    <h3>Join 100 Compannies who <br> boost their business with <br> Product</h3>
+                    <a class="join__btn" href="#">Get This</a>
+                 </div>
+                 <div class="join__img">
+                     <img src="images/join-img.png" alt="image-screen">
+                 </div>
+               </div>
+           </div>
+       </section>
     </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer__top grid">
+                <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+                    <img class="footer__logo" src="images/logotip.svg" alt="logotip">
+                    <ul class="footer-socials grid">
+                        <li class="social-item">
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+                    <h4>Resource</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">About Us</li>
+                        <li class="footer__item">Blog</li>
+                        <li class="footer__item">Contact</li>
+                        <li class="footer__item">FAQ</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+                    <h4>Legal Stuff</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">Disclaimer</li>
+                        <li class="footer__item">Financing</li>
+                        <li class="footer__item">Privacy Policy</li>
+                        <li class="footer__item">Terms of Service</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+                    <h4>knowing you're always on the best energy deal.</h4>
+                    <form action="#">
+                        <input class="input" type="email"> <br>
+                        <input class="button submit" type="submit" value="Sign up Now">
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>Made With Love By Figmaland All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
